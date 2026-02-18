@@ -560,28 +560,18 @@ img {
 .gallery__item {
   border-radius: 16px;
   overflow: hidden;
-}
-
-.gallery__placeholder {
-  width: 100%;
   aspect-ratio: 1;
-  background: linear-gradient(135deg, var(--beige) 0%, var(--milky) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  border: 2px dashed var(--beige-dark);
-  transition: all 0.3s;
 }
 
-.gallery__placeholder span {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  opacity: 0.7;
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
 }
 
-.gallery__placeholder:hover {
-  border-color: var(--gold-light);
+.gallery__item:hover img {
+  transform: scale(1.05);
 }
 
 /* ===========================
